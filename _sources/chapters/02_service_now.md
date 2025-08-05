@@ -1,0 +1,10 @@
+# Getting New Powers
+Most any time you need to do something new with the UCDH IT system, you'll need permission for it. Generally, the way to get that permission is to request it through [the hospital's Service Now catalog](https://ucdh.service-now.com). The Service Now catalog has entries for VPN access, getting rights to services like REDCap, keycard access to hospital buildings, accessing shared folders on the hospital's network drive, and getting access to some data sets – almost everything you may need from a access and security perspective.
+
+The simplest way to find the catalog item you need is to type a keyword into the search bar and pick from the list of results. Where there are multiple options for the same service, select the one for "External" or "Davis employees" because Datalab staff are not emplyees of UCDHS. See the screenshot for an example of searching for VPN access, which highlights the correct "External Employee" option.
+
+![Screenshot depicts a user searching the UC Davis Hospital Service Now catalog for the term VPN and selecting the option called "Remote Access - VPN - External Employee".](/img/vpn-select-screenshot.png)
+
+On the next screen, select the option that says you are a "Contractor", and put a note in the "Comments" box that says you are an employee on the Davis campus, and that indicates the project and relevant PI at the hospital. Then you can add the VPN service to your cart.
+
+Once you've added something to your cart, you check out as if Servie Now were an online shopping site. You won't have to pay but you will have to fill out fields that explain why you need this service and who to talk to for approval of the request. Generally, that will be either your supervisor or the researcher with whom you are collaborating – ask around if youre not sure.

@@ -1,0 +1,5 @@
+# CITI Training
+The rules that govern medical research ethics in the United States apply to nearly all researchers and institutions, while compliance relies on individual actions. This puts institutions in an uncomfortable bind because they may be liable for the decisions of individual researchers who have idiosyncratic ideas of ethical research practices. The Collaborative Institutional Training Initiative (CITI) is one way that institutions are attempting to systematize training in medical research ethics.
+
+In order to access some services provided by UCDH, you may need CITI training. UC Davis is a member of CITI so you will create an account at [citiprogram.org](citiprogram.org) that is linked to your UC Davis identity. Then you will be able to add trainings or yourself. In order to handle medical data at UC Davis, you must complete at least the "Basic Course" for the role "Biomedical Researchers and Staff". This involves reading course material and then answering an onlune quiz to complete the certiication. The training is then valid for three years.
+
