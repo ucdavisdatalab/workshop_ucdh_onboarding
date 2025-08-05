@@ -10,7 +10,7 @@ Requesting an ACE VM is done through Service Now. Search for the "ACE/HC2 Order 
 When you request a VM, there are three pages of options to fill out. Here we'll walk you through them:
 
 ### First screen
-This screen has some options that you ned to fil out before you add the ACE order to your cart.
+This screen has some options that you need to fill out before you add the ACE order to your cart.
 
 #### Size
 The small and medium options are well-explained on th request screen. If you select "custom", you'll have to expain what you want in a free-text entry box when you submit your order.
