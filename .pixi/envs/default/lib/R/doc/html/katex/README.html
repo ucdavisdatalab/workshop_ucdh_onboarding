@@ -1,0 +1,621 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en-us" data-content_root="../../../../../../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title> &#8212; A Datalab Guide to UC Davis Hospital IT</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../../../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../../../../../../_static/documentation_options.js?v=dddfd265"></script>
+    <script src="../../../../../../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../../../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../../../../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../../../../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../../../../../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../../../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '.pixi/envs/default/lib/R/doc/html/katex/README';</script>
+    <link rel="index" title="Index" href="../../../../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en-us"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../../../../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../../../../../../chapters/index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../../../../../../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-light" alt="A Datalab Guide to UC Davis Hospital IT - Home"/>
+    <img src="../../../../../../../../_static/datalab-logo-full-color-rgb-1.png" class="logo__image only-dark pst-js-only" alt="A Datalab Guide to UC Davis Hospital IT - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../../../../../../chapters/index.html">
+                    Overview
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../../../../chapters/01_intro.html">1. Introduction</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/datalab-dev/workshop_ucdh_onboarding" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/datalab-dev/workshop_ucdh_onboarding/issues/new?title=Issue%20on%20page%20%2F.pixi/envs/default/lib/R/doc/html/katex/README.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../../../../../../../_sources/.pixi/envs/default/lib/R/doc/html/katex/README.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting started</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starter-template">Starter template</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-and-documentation">Demo and Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-contributors">Code Contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-contributors">Financial Contributors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals">Individuals</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#organizations">Organizations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="reference external" href="https://katex.org/"><img alt="KaTeX" src="https://katex.org/img/katex-logo-black.svg" width="130" /></a><a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p><a class="reference external" href="https://www.npmjs.com/package/katex"><img alt="npm" src="https://img.shields.io/npm/v/katex.svg" /></a>
+<a class="reference external" href="https://github.com/semantic-release/semantic-release"><img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" /></a>
+<a class="reference external" href="https://github.com/KaTeX/KaTeX/actions?query=workflow%3ACI"><img alt="CI" src="https://github.com/KaTeX/KaTeX/workflows/CI/badge.svg?branch=main&amp;event=push" /></a>
+<a class="reference external" href="https://codecov.io/gh/KaTeX/KaTeX"><img alt="codecov" src="https://codecov.io/gh/KaTeX/KaTeX/branch/main/graph/badge.svg" /></a>
+<a class="reference external" href="https://github.com/KaTeX/KaTeX/discussions"><img alt="Discussions" src="https://img.shields.io/badge/Discussions-join-brightgreen" /></a>
+<a class="reference external" href="https://www.jsdelivr.com/package/npm/katex"><img alt="jsDelivr" src="https://data.jsdelivr.com/v1/package/npm/katex/badge?style=rounded" /></a>
+<img alt="katex.min.js size" src="https://img.badgesize.io/https://unpkg.com/katex/dist/katex.min.js?compression=gzip" />
+<a class="reference external" href="https://gitpod.io/#https://github.com/KaTeX/KaTeX"><img alt="Gitpod ready-to-code" src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" /></a>
+<a class="reference external" href="https://opencollective.com/katex"><img alt="Financial Contributors on Open Collective" src="https://opencollective.com/katex/all/badge.svg?label=financial+contributors" /></a></p>
+<p>KaTeX is a fast, easy-to-use JavaScript library for TeX math rendering on the web.</p>
+<ul class="simple">
+<li><p><strong>Fast:</strong> KaTeX renders its math synchronously and doesn’t need to reflow the page. See how it compares to a competitor in <a class="reference external" href="http://www.intmath.com/cg5/katex-mathjax-comparison.php">this speed test</a>.</p></li>
+<li><p><strong>Print quality:</strong> KaTeX’s layout is based on Donald Knuth’s TeX, the gold standard for math typesetting.</p></li>
+<li><p><strong>Self contained:</strong> KaTeX has no dependencies and can easily be bundled with your website resources.</p></li>
+<li><p><strong>Server side rendering:</strong> KaTeX produces the same output regardless of browser or environment, so you can pre-render expressions using Node.js and send them as plain HTML.</p></li>
+</ul>
+<p>KaTeX is compatible with all major browsers, including Chrome, Safari, Firefox, Opera, Edge, and IE 11.</p>
+<p>KaTeX supports much (but not all) of LaTeX and many LaTeX packages. See the <a class="reference external" href="https://katex.org/docs/supported.html">list of supported functions</a>.</p>
+<p>Try out KaTeX <a class="reference external" href="https://katex.org/#demo">on the demo page</a>!</p>
+<section id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
+<section id="starter-template">
+<h3>Starter template<a class="headerlink" href="#starter-template" title="Link to this heading">#</a></h3>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="cm">&lt;!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly --&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- The loading of KaTeX is deferred to speed up page rendering --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+
+    <span class="cm">&lt;!-- To automatically render math in text elements, include the auto-render extension: --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">defer</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js&quot;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&quot;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&quot;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&quot;anonymous&quot;</span>
+        <span class="na">onload</span><span class="o">=</span><span class="s">&quot;renderMathInElement(document.body);&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  ...
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+</div>
+<p>You can also <a class="reference external" href="https://github.com/KaTeX/KaTeX/releases">download KaTeX</a> and host it yourself.</p>
+<p>For details on how to configure auto-render extension, refer to <a class="reference external" href="https://katex.org/docs/autorender.html">the documentation</a>.</p>
+</section>
+<section id="api">
+<h3>API<a class="headerlink" href="#api" title="Link to this heading">#</a></h3>
+<p>Call <code class="docutils literal notranslate"><span class="pre">katex.render</span></code> to render a TeX expression directly into a DOM element.
+For example:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">katex</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s2">&quot;c = \\pm\\sqrt{a^2 + b^2}&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">element</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">throwOnError</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+<p>Call <code class="docutils literal notranslate"><span class="pre">katex.renderToString</span></code> to generate an HTML string of the rendered math,
+e.g., for server-side rendering.  For example:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span><span class="w"> </span><span class="nx">html</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">katex</span><span class="p">.</span><span class="nx">renderToString</span><span class="p">(</span><span class="s2">&quot;c = \\pm\\sqrt{a^2 + b^2}&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">throwOnError</span><span class="o">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="p">});</span>
+<span class="c1">// &#39;&lt;span class=&quot;katex&quot;&gt;...&lt;/span&gt;&#39;</span>
+</pre></div>
+</div>
+<p>Make sure to include the CSS and font files in both cases.
+If you are doing all rendering on the server, there is no need to include the
+JavaScript on the client.</p>
+<p>The examples above use the <code class="docutils literal notranslate"><span class="pre">throwOnError:</span> <span class="pre">false</span></code> option, which renders invalid
+inputs as the TeX source code in red (by default), with the error message as
+hover text.  For other available options, see the
+<a class="reference external" href="https://katex.org/docs/api.html">API documentation</a>,
+<a class="reference external" href="https://katex.org/docs/options.html">options documentation</a>, and
+<a class="reference external" href="https://katex.org/docs/error.html">handling errors documentation</a>.</p>
+</section>
+</section>
+<section id="demo-and-documentation">
+<h2>Demo and Documentation<a class="headerlink" href="#demo-and-documentation" title="Link to this heading">#</a></h2>
+<p>Learn more about using KaTeX <a class="reference external" href="https://katex.org">on the website</a>!</p>
+</section>
+<section id="contributors">
+<h2>Contributors<a class="headerlink" href="#contributors" title="Link to this heading">#</a></h2>
+<section id="code-contributors">
+<h3>Code Contributors<a class="headerlink" href="#code-contributors" title="Link to this heading">#</a></h3>
+<p>This project exists thanks to all the people who contribute code. If you’d like to help, see <a class="reference internal" href="#CONTRIBUTING.md"><span class="xref myst">our guide to contributing code</span></a>.
+<a href="https://github.com/KaTeX/KaTeX/graphs/contributors"><img alt="Code contributors" src="https://contributors-svg.opencollective.com/katex/contributors.svg?width=890&amp;button=false" /></a></p>
+</section>
+<section id="financial-contributors">
+<h3>Financial Contributors<a class="headerlink" href="#financial-contributors" title="Link to this heading">#</a></h3>
+<p>Become a financial contributor and help us sustain our community.</p>
+<section id="individuals">
+<h4>Individuals<a class="headerlink" href="#individuals" title="Link to this heading">#</a></h4>
+<p><a href="https://opencollective.com/katex"><img alt="Contribute on Open Collective" src="https://opencollective.com/katex/individuals.svg?width=890" /></a></p>
+</section>
+<section id="organizations">
+<h4>Organizations<a class="headerlink" href="#organizations" title="Link to this heading">#</a></h4>
+<p>Support this project with your organization. Your logo will show up here with a link to your website.</p>
+<p><a href="https://opencollective.com/katex/organization/0/website"><img alt="Organization 1" src="https://opencollective.com/katex/organization/0/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/1/website"><img alt="Organization 2" src="https://opencollective.com/katex/organization/1/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/2/website"><img alt="Organization 3" src="https://opencollective.com/katex/organization/2/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/3/website"><img alt="Organization 4" src="https://opencollective.com/katex/organization/3/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/4/website"><img alt="Organization 5" src="https://opencollective.com/katex/organization/4/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/5/website"><img alt="Organization 6" src="https://opencollective.com/katex/organization/5/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/6/website"><img alt="Organization 7" src="https://opencollective.com/katex/organization/6/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/7/website"><img alt="Organization 8" src="https://opencollective.com/katex/organization/7/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/8/website"><img alt="Organization 9" src="https://opencollective.com/katex/organization/8/avatar.svg" /></a>
+<a href="https://opencollective.com/katex/organization/9/website"><img alt="Organization 10" src="https://opencollective.com/katex/organization/9/avatar.svg" /></a></p>
+</section>
+</section>
+</section>
+<section id="license">
+<h2>License<a class="headerlink" href="#license" title="Link to this heading">#</a></h2>
+<p>KaTeX is licensed under the <a class="reference external" href="http://opensource.org/licenses/MIT">MIT License</a>.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./.pixi/envs/default/lib/R/doc/html/katex"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started">Getting started</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#starter-template">Starter template</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#api">API</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#demo-and-documentation">Demo and Documentation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contributors">Contributors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#code-contributors">Code Contributors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#financial-contributors">Financial Contributors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#individuals">Individuals</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#organizations">Organizations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license">License</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Wesley Brooks
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+  <img alt="CC BY-SA 4.0" src="https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg"> 
+</a>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../../../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
