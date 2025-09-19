@@ -1,4 +1,4 @@
-# Getting New Powers
+# Service Now (Getting New Powers)
 Most any time you need to do something new with the UCDH IT system, you'll need permission for it. Generally, the way to get that permission is to request it through [the hospital's Service Now catalog](https://ucdh.service-now.com). The Service Now catalog has entries for VPN access, getting rights to services like REDCap, keycard access to hospital buildings, accessing shared folders on the hospital's network drive, and getting access to some data sets – almost everything you may need from a access and security perspective.
 
 The simplest way to find the catalog item you need is to type a keyword into the search bar and pick from the list of results. Where there are multiple options for the same service, select the one for "External" or "Davis employees" because Datalab staff are not emplyees of UCDHS. See the screenshot for an example of searching for VPN access, which highlights the correct "External Employee" option.

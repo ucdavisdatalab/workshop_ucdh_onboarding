@@ -1,0 +1,3 @@
+## Get an Active Directory (AD) Account
+
+UCDH has a completely separate IT system from the Davis campus. One consequence is that your Davis campus login won't work on hospital systems. You'll need an account on the UCDH computer system before anything will work for you. This is called an Active Driectory (AD) account because the hospital uses a windows network drive, for which AD is the login manager. To request an AD account requires being logged in on an active AD account, whih sounds like a catch-22. The solution is that someone else must request the AD account for you, and it must also be approved by a supervisor. So, probably talk to Carl about having him request the account.

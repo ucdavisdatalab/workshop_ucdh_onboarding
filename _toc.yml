@@ -10,3 +10,6 @@ options:
 # Chapters may be written in either Markdown or as Jupyter Notebooks
 chapters:
   - file: chapters/01_intro
+  - file: chapters/02_service_now
+  - file: chapters/03_ace
+  - file: chapters/04_protected_health_information
