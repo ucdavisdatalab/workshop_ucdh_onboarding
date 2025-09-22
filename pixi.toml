@@ -3,7 +3,7 @@ authors = ["Wes B <wbrooks@ucdavis.edu>"]
 channels = ["conda-forge"]
 description = "Add a short description here"
 name = "workshop_ucdh_onboarding"
-platforms = ["osx-64"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
 version = "0.1.0"
 
 [tasks]
