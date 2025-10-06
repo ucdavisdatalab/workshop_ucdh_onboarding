@@ -1,6 +1,6 @@
 (chapter:vpn)=
 # VPN Access
-In order access services that are hosted on UCDH premises, you must make a secure connection via the UCDH VPN. There is an official [UCDH help page for the VPN](https://health.ucdavis.edu/remote-access/vpn/download-and-install-vpn), which smoe people may prefer. This chapter is meant to be very practical, so it may leave leave "why"-type questions unanswered.
+In order access services that are hosted on UCDH premises, you must make a secure connection via the UCDH VPN. There is an official [UCDH help page for the VPN](https://health.ucdavis.edu/remote-access/vpn/) including download links and a list of frequently asked questions, which some people may prefer. This chapter is meant to be very practical, so it may leave leave "why"-type questions unanswered.
 
 ## Getting Authorization for the VPN
 Remember that to get new powers on the UCDH IT system, you need to "order" them through the Service Now catalog (see the previous chapter.) This is how to get your account authorized for the VPN. Search the service now catalog for "VPN" and order the item called "Remote Access - VPN - External Employee".
