@@ -44,10 +44,6 @@ sphinx:
   config:
     html_show_copyright: false
     language: en-us
-    myst_enable_extensions:
-      - colon_fence
-      - attrs_inline
-      - attrs_block
 
 parse:
   myst_enable_extensions:

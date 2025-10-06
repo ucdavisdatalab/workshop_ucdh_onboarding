@@ -12,3 +12,4 @@ Once your AD account is active, you'll be able to log in to UCDH IT services. Yo
 ![Screenshot of the UCDH login page with the background image of the UCDMC campus.](../img/ucdh-login.png)
 
 If you are a brand new affiliate, you will likely not be able to access any of the IT services that you need for your research. You must place an order for rights to access specific tools from the Service Now catalog, which is the topic of our next chapter.
+
