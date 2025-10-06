@@ -13,5 +13,5 @@ There is a lot of information about UCDH IT systems written by the UCDH IT staff
 
 
 ## A Note on Getting Help
-The IT team at UCDH maintains a [Knowledge Base linked here](https://ucdh.service-now.com/now/nav/ui/classic/params/target/home.do). It is part of the Service Now system (described in {ref}`chapter:service-now`), so you won't be able to access it until you have an AD account (see {ref}`chapter:active-directory`.) The knowledge base articles are generally authoritative but written for people who already know what they need. We encourage you to start searching the knowledge base to supplement this guide as soon as you have access.
+The IT team at UCDH maintains a [Knowledge Base linked here](https://ucdh.service-now.com/itss?id=kb_home). It is part of the Service Now system (described in {ref}`chapter:service-now`), so you won't be able to access it until you have an AD account (see {ref}`chapter:active-directory`.) The knowledge base articles are generally authoritative but written for people who already know what they need. We encourage you to start searching the knowledge base to supplement this guide as soon as you have access.
 
