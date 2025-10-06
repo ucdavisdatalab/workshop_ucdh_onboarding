@@ -15,3 +15,5 @@ There is a lot of information about UCDH IT systems written by the UCDH IT staff
 ## A Note on Getting Help
 The IT team at UCDH maintains a [Knowledge Base linked here](https://ucdh.service-now.com/itss?id=kb_home). It is part of the Service Now system (described in {ref}`chapter:service-now`), so you won't be able to access it until you have an AD account (see {ref}`chapter:active-directory`.) The knowledge base articles are generally authoritative but written for people who already know what they need. We encourage you to start searching the knowledge base to supplement this guide as soon as you have access.
 
+There is also a ticket system where you can get help from UCDH IT staff. Once again, you'll need to log into Service Now before you can submit a ticket. Then [the ticket submission form is linked here(https://ucdh.service-now.com/itss?id=sc_cat_item&sys_id=d09627efdb576300e613327e9d96193e).
+
