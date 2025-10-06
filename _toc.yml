@@ -16,3 +16,6 @@ chapters:
   - file: chapters/05_vpn
   - file: chapters/06_ace
   - file: chapters/07_data_storage
+  
+appendices:
+  - file: chapters/appendix_order_external_affiliate
