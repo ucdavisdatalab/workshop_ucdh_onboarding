@@ -44,6 +44,7 @@ sphinx:
   config:
     html_show_copyright: false
     language: en-us
+    
 
 parse:
   myst_enable_extensions:
@@ -52,4 +53,5 @@ parse:
     - html_image
     - linkify
     - substitution
-
+    - attrs_inline
+    - attrs_block
