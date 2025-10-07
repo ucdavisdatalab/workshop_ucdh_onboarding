@@ -8,14 +8,16 @@ options:
   numbered: true
 
 # Chapters may be written in either Markdown or as Jupyter Notebooks
-chapters:
-  - file: chapters/01_intro
-  - file: chapters/02_citi_training
-  - file: chapters/03_active_directory
-  - file: chapters/04_service_now
-  - file: chapters/05_vpn
-  - file: chapters/06_ace
-  - file: chapters/07_data_storage
-  
-appendices:
-  - file: chapters/appendix_order_external_affiliate
+parts:
+  - caption: "Computing at UC Davis Health"
+    chapters:
+      - file: chapters/01_intro
+      - file: chapters/02_citi_training
+      - file: chapters/03_active_directory
+      - file: chapters/04_service_now
+      - file: chapters/05_vpn
+      - file: chapters/06_ace
+      - file: chapters/07_data_storage
+  - caption: "Appendices"
+    chapters:
+      - file: chapters/appendix_order_external_affiliate
