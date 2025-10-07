@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>2. CITI Training for Handling Protected Information &#8212; A Datalab Guide to UC Davis Hospital IT</title>
+    <title>CITI Training for Handling Protected Information &#8212; A Datalab Guide to UC Davis Hospital IT</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/02_citi_training';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3. Get an Active Directory (AD) Account" href="03_active_directory.html" />
-    <link rel="prev" title="1. Introduction" href="01_intro.html" />
+    <link rel="next" title="Get an Active Directory (AD) Account" href="03_active_directory.html" />
+    <link rel="prev" title="Introduction" href="01_intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en-us"/>
   </head>
@@ -179,14 +179,20 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_intro.html">1. Introduction</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. CITI Training for Handling Protected Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">3. Get an Active Directory (AD) Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">4. Service Now (Getting New Powers)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">5. VPN Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_ace.html">6. Advanced Compute Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">7. Data Storage</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduction</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">CITI Training for Handling Protected Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">Get an Active Directory (AD) Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">Service Now (Getting New Powers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">VPN Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_ace.html">Advanced Compute Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">Data Storage</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="appendix_order_external_affiliate.html">Creating an External Affiliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_phi_pii.html">Protected Health Information and Personally Identifiable Information</a></li>
 </ul>
 
     </div>
@@ -382,8 +388,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citi-training">2.1. CITI Training</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2. CITI Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citi-training">CITI Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CITI Training</a></li>
 </ul>
             </nav>
         </div>
@@ -395,16 +401,20 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="citi-training-for-handling-protected-information">
-<span id="chapter-citi-training"></span><h1><span class="section-number">2. </span>CITI Training for Handling Protected Information<a class="headerlink" href="#citi-training-for-handling-protected-information" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="citi-training-for-handling-protected-information">
+<span id="chapter-citi-training"></span><h1>CITI Training for Handling Protected Information<a class="headerlink" href="#citi-training-for-handling-protected-information" title="Link to this heading">#</a></h1>
 <p>There are (at least) two kinds of data that you have to be careful about when working with human-subjects data: Personally Identifiable Information (PII) and Protected Health Information (PHI). There is a confusingly large number of protective tiers and policies for this information, which are seemingly independently set by the UC system, UC Davis, and the UC Davis Medical Center. But these policies are all meant to enforce the basic rule that that there be no unauthorized access to these data. The systems and procedures described in this guide exist so that PHI and PII can be hosted securely on servers owned by UCDH and located on UCDH property, while still allowing authorized researchers to do their work even if they’re not physically at the hospital. Part of becoming an authorized user is getting your “CITI training” to learn about protected data.</p>
 <section id="citi-training">
-<h2><span class="section-number">2.1. </span>CITI Training<a class="headerlink" href="#citi-training" title="Link to this heading">#</a></h2>
+<h2>CITI Training<a class="headerlink" href="#citi-training" title="Link to this heading">#</a></h2>
 <p>The rules that govern medical research ethics in the United States apply to nearly all researchers and institutions, while compliance relies on individual actions. This puts institutions in an uncomfortable bind because they may be liable for the decisions of individual researchers who have idiosyncratic ideas of ethical research practices. The Collaborative Institutional Training Initiative (CITI) is one way that institutions are attempting to systematize training in medical research ethics.</p>
-<p>In order to access some services provided by UCDH, you may need CITI training. UC Davis is a member of CITI so you will create an account at <a class="reference external" href="https://citiprogram.org">citiprogram.org</a> that is linked to your UC Davis identity. Then you will be able to add trainings or yourself. In order to handle medical data at UC Davis, you must complete at least the “Basic Course” for the role “Biomedical Researchers and Staff”. This involves reading course material and then answering an online quiz to complete the certiication. The training is then valid for three years.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Take your CITI training seriously — it is very easy to expose protected data in ways that are impossible to undo.</p>
+</div>
+<p>In order to access some services provided by UCDH, you may need CITI training. UC Davis is a member of CITI so you will create an account at <a class="reference external" href="https://citiprogram.org">citiprogram.org</a> that is linked to your UC Davis identity. Then you will be able to add trainings or yourself. In order to handle medical data at UC Davis, you must complete at least the “Basic Course” for the role “Biomedical Researchers and Staff”. This involves reading course material and then answering an online quiz to complete the certification. The training is then valid for three years.</p>
 </section>
 <section id="id1">
-<h2><span class="section-number">2.2. </span>CITI Training<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>CITI Training<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>The Collaborative Institutional Training Initiative (CITI) was begun as a parnership between the University of Miami and the Fred Hutchinson Cancer Research Center. It provides a standardized, peer-reviewd set of trainings that are meant to educate people about the laws and ethics of human-subjects reasearch. You’ll need to complete the “Basic” training for biomedical researchers. Here is how to do that:</p>
 <ul class="simple">
 <li><p>Go to <a class="reference external" href="https://www.citiprogram.org">citiprogram.org</a>.</p></li>
@@ -455,7 +465,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Introduction</p>
+        <p class="prev-next-title">Introduction</p>
       </div>
     </a>
     <a class="right-next"
@@ -463,7 +473,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">3. </span>Get an Active Directory (AD) Account</p>
+        <p class="prev-next-title">Get an Active Directory (AD) Account</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -483,8 +493,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citi-training">2.1. CITI Training</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.2. CITI Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citi-training">CITI Training</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">CITI Training</a></li>
 </ul>
   </nav></div>
 

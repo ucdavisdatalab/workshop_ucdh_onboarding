@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>6. Advanced Compute Environment &#8212; A Datalab Guide to UC Davis Hospital IT</title>
+    <title>Advanced Compute Environment &#8212; A Datalab Guide to UC Davis Hospital IT</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/06_ace';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Data Storage" href="07_data_storage.html" />
-    <link rel="prev" title="5. VPN Access" href="05_vpn.html" />
+    <link rel="next" title="Data Storage" href="07_data_storage.html" />
+    <link rel="prev" title="VPN Access" href="05_vpn.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en-us"/>
   </head>
@@ -179,14 +179,20 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">2. CITI Training for Handling Protected Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">3. Get an Active Directory (AD) Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">4. Service Now (Getting New Powers)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">5. VPN Access</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Advanced Compute Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">7. Data Storage</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">CITI Training for Handling Protected Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">Get an Active Directory (AD) Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">Service Now (Getting New Powers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">VPN Access</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Advanced Compute Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">Data Storage</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="appendix_order_external_affiliate.html">Creating an External Affiliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_phi_pii.html">Protected Health Information and Personally Identifiable Information</a></li>
 </ul>
 
     </div>
@@ -382,17 +388,17 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-an-ace-vm">6.1. Requesting an ACE VM</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-one-basic-setup">6.1.1. Page One: Basic Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-two-options">6.1.2. Page Two: Options</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-three-project-details">6.1.3. Page Three: Project Details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-an-ace-vm">Requesting an ACE VM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-one-basic-setup">Page One: Basic Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-two-options">Page Two: Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-three-project-details">Page Three: Project Details</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">6.2. Connecting</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-to-ace">6.2.1. Connect to ACE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">Connecting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-to-ace">Connect to ACE</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-data">6.3. Storing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-data">Storing Data</a></li>
 </ul>
             </nav>
         </div>
@@ -404,24 +410,24 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="advanced-compute-environment">
-<h1><span class="section-number">6. </span>Advanced Compute Environment<a class="headerlink" href="#advanced-compute-environment" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="advanced-compute-environment">
+<span id="chapter-ace"></span><h1>Advanced Compute Environment<a class="headerlink" href="#advanced-compute-environment" title="Link to this heading">#</a></h1>
 <p>UCDH has set up a powerful on-site compute environment called ACE because researchers often require significant computational resources and medical data generally cannot leave the hospital’s servers. ACE is a system that lets researchers request a virtual machine (VM) with the necessary resources for a project. VMs on ACE are provided for a limited duration (up to a year, according to the request form), then returned to the pool of resources. As such, they are useful for computation but should not be used for long-term data storage.</p>
 <section id="requesting-an-ace-vm">
-<h2><span class="section-number">6.1. </span>Requesting an ACE VM<a class="headerlink" href="#requesting-an-ace-vm" title="Link to this heading">#</a></h2>
+<h2>Requesting an ACE VM<a class="headerlink" href="#requesting-an-ace-vm" title="Link to this heading">#</a></h2>
 <p>Requesting an ACE VM is done through Service Now. Search for the “ACE/HC2 Order Guide” and you’ll end up at the form seen in the screenshot below. This is the irst of three screens where you will specfiy the computer resources required for your VM request. We will explain the options below</p>
 <section id="page-one-basic-setup">
-<h3><span class="section-number">6.1.1. </span>Page One: Basic Setup<a class="headerlink" href="#page-one-basic-setup" title="Link to this heading">#</a></h3>
+<h3>Page One: Basic Setup<a class="headerlink" href="#page-one-basic-setup" title="Link to this heading">#</a></h3>
 <p>The screenshot shows the first page of the form used to request an ACE VM. The selections are explained below the image.</p>
 <p><img alt="Screenshot of the first page of the form for requesting an ACE Virtual Machine. The options are explained in the text below this image." src="../_images/ACE_request_screenshot.png" /></p>
 <p><strong>Size</strong> The small and medium options are well-explained on the request screen. If you select “custom”, you’ll have to expain what you want in a free-text entry box when you submit your order.</p>
 <p><strong>Operating System</strong> The listed choices are Windows and Red Hat Linux. You can get a different Linux ditribution (e.g. Ubuntu) by selecting Red Hat and then making a specific request in the free-text entry box when you submit your order.</p>
 <p><strong>Do You Require a GPU?</strong> Only select yes if you are specifically going to implement a machine learning model in a way that takes advantage of a GPU.</p>
 <p><strong>GUI or Command Line</strong> Strangely, the dropdown menu labeled “What software application will be required in the workspace?” is really about deciding whether you want a graphical user interface (GUI) or a command line interface (CLI). For a GUI, select <a class="reference external" href="https://docs.anaconda.com">Anaconda</a> from the dropdown menu and for a CLI, select <a class="reference external" href="https://docs.anaconda.com/miniconda/">Miniconda</a> or “None”. You can use whatever environment manager software you wish on ACE – <a class="reference external" href="https://pixi.sh">pixi</a> is Wes and Nick’s current favorite.</p>
-<p><strong>Will The VM Be Used For Sensitive Data?</strong> Select “Yes” if you will use the virtual machine or analysis of data that may be protected or personally identifiable. This certainly is the case if patient names, addresses, or birthdates are anywhere in the data, but there are less obvious kinds of personal or protected data. Don’t consider this guide to be a reference or what constitutes personally-identifiable inormation or protected health information. Instead, refer to your training on biomediucal research rules and ethics. If you haven’t yet had that training, see the chapter on <a class="reference internal" href="#chapter:protected-inormation"><span class="xref myst">Personal and Protected Information</span></a> to learn how to access it.</p>
+<p><strong>Will The VM Be Used For Sensitive Data?</strong> Select “Yes” if you will use the virtual machine or analysis of data that may be protected or personally identifiable. This certainly is the case if patient names, addresses, or birthdates are anywhere in the data, but there are less obvious kinds of personal or protected data. Don’t consider this guide to be a reference or what constitutes personally-identifiable information or protected health information. Instead, refer to your training on biomediucal research rules and ethics. If you haven’t yet had that training, see the chapter on <a class="reference internal" href="02_citi_training.html#chapter-citi-training"><span class="std std-ref">CITI Training for Handling Protected Information</span></a> to learn how to access it.</p>
 </section>
 <section id="page-two-options">
-<h3><span class="section-number">6.1.2. </span>Page Two: Options<a class="headerlink" href="#page-two-options" title="Link to this heading">#</a></h3>
+<h3>Page Two: Options<a class="headerlink" href="#page-two-options" title="Link to this heading">#</a></h3>
 <p>After you click “Next” on the Basic Setup page, you’ll be prompted to request options for your VM. The screenshot below shows the interface for entering options, assuming you .</p>
 <p><img alt="Screenshot of the second page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image." src="../_images/ACE-options.png" /></p>
 <p>The selections are explained below the image.</p>
@@ -429,7 +435,7 @@ document.write(`
 <p><strong>Environment</strong></p>
 </section>
 <section id="page-three-project-details">
-<h3><span class="section-number">6.1.3. </span>Page Three: Project Details<a class="headerlink" href="#page-three-project-details" title="Link to this heading">#</a></h3>
+<h3>Page Three: Project Details<a class="headerlink" href="#page-three-project-details" title="Link to this heading">#</a></h3>
 <p>The screenshot shows the third page of the form used to request an ACE VM. The selections are explained below the image.</p>
 <p><img alt="Screenshot of the third page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image." src="../_images/ace-form-3.png" /></p>
 <p><strong>t</strong></p>
@@ -437,19 +443,19 @@ document.write(`
 </section>
 </section>
 <section id="connecting">
-<h2><span class="section-number">6.2. </span>Connecting<a class="headerlink" href="#connecting" title="Link to this heading">#</a></h2>
+<h2>Connecting<a class="headerlink" href="#connecting" title="Link to this heading">#</a></h2>
 <p>Beore you can connect to your new VM, someone in UCDH IT must create it and then contact you with login inoformation. As of now, that person is generally Chris Lambertus. You will get an email from him with a username and password to use for your connection (the username may match your UC Davis identity but the password will deinitely not.)</p>
 <section id="connect-to-ace">
-<h3><span class="section-number">6.2.1. </span>Connect to ACE<a class="headerlink" href="#connect-to-ace" title="Link to this heading">#</a></h3>
+<h3>Connect to ACE<a class="headerlink" href="#connect-to-ace" title="Link to this heading">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order to connect to the ACE VM, you must be on the UCDH VPN (see the previous chapter)</p>
+<p>In order to connect to the ACE VM, you must be on the UCDH VPN (see <a class="reference internal" href="05_vpn.html#chapter-vpn"><span class="std std-ref">VPN Access</span></a>)</p>
 </div>
 <p>Now you are ready to connect to your ACE VM. If you requested a Windows VM with a desktop, then you will use Microsoft Remote Desktop to connect. I tend to request a Linux VM with no graphical interface, so I connect via SSH. In either case, the address to connect to is the numerical IP that will have been sent to you by Chris Lambertus in response to your ServiceNow request. He will have also sent a password via an encrypted email (you’ll need to follow a link in that email to a web interface where the password can be decrypted.) Once you’ve logged in, I recommend adding you work computer’s SSH public key to the file <code class="docutils literal notranslate"><span class="pre">~/.ssh/authorized_keys</span></code> on the VM. That way you won’t have to enter the password each time you want to connect. (See Datalab’s workshop <a class="reference external" href="https://ucdavisdatalab.github.io/workshop_intro_to_remote_computing/chapters/01_connecting-to-a-server.html#uploading-ssh-keys">Introduction to Remote Computing</a>)</p>
 </section>
 </section>
 <section id="storing-data">
-<h2><span class="section-number">6.3. </span>Storing Data<a class="headerlink" href="#storing-data" title="Link to this heading">#</a></h2>
+<h2>Storing Data<a class="headerlink" href="#storing-data" title="Link to this heading">#</a></h2>
 <p>You will have a small amount of drive space in your <code class="docutils literal notranslate"><span class="pre">\home</span></code> space on the ACE VM (generally 20GB, shared between all the users with accounts on this VM). Data storage should use the <code class="docutils literal notranslate"><span class="pre">/data</span></code> directory – you’ll be provisioned with a folder at <code class="docutils literal notranslate"><span class="pre">/data/&lt;machine-name&gt;</span></code>, where <code class="docutils literal notranslate"><span class="pre">&lt;machine-name&gt;</span></code> is a placeholder for the VM’s name (something like <code class="docutils literal notranslate"><span class="pre">hsrpn01int18</span></code>.) If you’re using an environment manager like <a class="reference external" href="https://pixi.sh">Pixi</a> (hight recommended, by the way!) it will need to install large software packages that can quickly fill your allotted space in the <code class="docutils literal notranslate"><span class="pre">/home</span></code> directory. The solution is to establish your working directory in the <code class="docutils literal notranslate"><span class="pre">/data</span></code> directory. Just remember to navigate to that directory each time you resume work on your UCDH project!</p>
 </section>
 </section>
@@ -490,7 +496,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>VPN Access</p>
+        <p class="prev-next-title">VPN Access</p>
       </div>
     </a>
     <a class="right-next"
@@ -498,7 +504,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">7. </span>Data Storage</p>
+        <p class="prev-next-title">Data Storage</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -518,17 +524,17 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-an-ace-vm">6.1. Requesting an ACE VM</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-one-basic-setup">6.1.1. Page One: Basic Setup</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-two-options">6.1.2. Page Two: Options</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-three-project-details">6.1.3. Page Three: Project Details</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-an-ace-vm">Requesting an ACE VM</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-one-basic-setup">Page One: Basic Setup</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-two-options">Page Two: Options</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#page-three-project-details">Page Three: Project Details</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">6.2. Connecting</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-to-ace">6.2.1. Connect to ACE</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">Connecting</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-to-ace">Connect to ACE</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-data">6.3. Storing Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storing-data">Storing Data</a></li>
 </ul>
   </nav></div>
 

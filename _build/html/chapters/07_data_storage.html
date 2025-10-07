@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>7. Data Storage &#8212; A Datalab Guide to UC Davis Hospital IT</title>
+    <title>Data Storage &#8212; A Datalab Guide to UC Davis Hospital IT</title>
   
   
   
@@ -60,7 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/07_data_storage';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="6. Advanced Compute Environment" href="06_ace.html" />
+    <link rel="next" title="Creating an External Affiliate" href="appendix_order_external_affiliate.html" />
+    <link rel="prev" title="Advanced Compute Environment" href="06_ace.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en-us"/>
   </head>
@@ -178,14 +179,20 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">2. CITI Training for Handling Protected Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">3. Get an Active Directory (AD) Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">4. Service Now (Getting New Powers)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">5. VPN Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_ace.html">6. Advanced Compute Environment</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Data Storage</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">CITI Training for Handling Protected Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">Get an Active Directory (AD) Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">Service Now (Getting New Powers)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_vpn.html">VPN Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_ace.html">Advanced Compute Environment</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Storage</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="appendix_order_external_affiliate.html">Creating an External Affiliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_phi_pii.html">Protected Health Information and Personally Identifiable Information</a></li>
 </ul>
 
     </div>
@@ -381,8 +388,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-drive">7.1. Network Drive</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onedrive">7.2. OneDrive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-drive">Network Drive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-drive-and-sharepoint">One Drive and Sharepoint</a></li>
 </ul>
             </nav>
         </div>
@@ -394,21 +401,22 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="data-storage">
-<h1><span class="section-number">7. </span>Data Storage<a class="headerlink" href="#data-storage" title="Link to this heading">#</a></h1>
-<p>Protected data can’t be taken off the UCDH premises and if you’re using an ACE VM it will have modest storage that will eventually be erased and returned to the general pool. So it is necessary to have some persistent storage that can store protected information, other than the VM hard drive. UCDH offers a couple of options here. The most secure but least convenient is to store the data on the UCDH network drive, and the more convenient but less secure storage option is OneDrive.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-storage">
+<h1>Data Storage<a class="headerlink" href="#data-storage" title="Link to this heading">#</a></h1>
+<p>Protected data can’t be taken off the UCDH premises and if you’re using an ACE VM it will have modest storage that will eventually be erased and returned to the general pool. So it is necessary to have some persistent storage that can store protected information, other than the VM hard drive. UCDH offers a couple of options here. The most secure but least convenient is to store the data on the UCDH network drive, and the more convenient but less secure storage option is Sharepoint or One Drive.</p>
 <section id="network-drive">
-<h2><span class="section-number">7.1. </span>Network Drive<a class="headerlink" href="#network-drive" title="Link to this heading">#</a></h2>
-<p>The UCDH network drive is a Windows NT-style filesystem that has managed access for users with valid permissions. You can access via the File Browser it if you’re using a UCDH-supplied computer, and from the ACE VM it is accessible via Samba, which should be installed by default in your shell environment. To access the network drive via Samba, use the <code class="docutils literal notranslate"><span class="pre">smbclient</span></code> command line tool like so:</p>
+<h2>Network Drive<a class="headerlink" href="#network-drive" title="Link to this heading">#</a></h2>
+<p>The UCDH network drive is a Windows NT-style filesystem that has managed access for users with valid permissions. If there is a folder on the network drive that you need to access, you’ll <a class="reference external" href="https://ucdh.service-now.com/itss?id=sc_cat_item&amp;amp;sys_id=3b274cbadb83d3c045883220ad961940">request access via the Service Now catalog</a>.</p>
+<p>You can access the notwork drive via the File Browser it if you’re using a UCDH-supplied computer (<a class="reference external" href="https://ucdh.service-now.com/itss?id=kb_article_view&amp;amp;sysparm_article=KB0023100">see instructions in the knowledge base</a>). From an ACE VM running Linux, the notwork drive is accessible via Samba, which should be installed by default. Use the <code class="docutils literal notranslate"><span class="pre">smbclient</span></code> command line tool to access the network drive via Samba, like so:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">smbclient</span>  \\\\<span class="n">hshome</span>\\<span class="n">shared</span> <span class="o">-</span><span class="sa">U</span><span class="s1">&#39;hs\wbrooks&#39;</span>
 </pre></div>
 </div>
 <p>but replacing my username (<code class="docutils literal notranslate"><span class="pre">hs\wbrooks</span></code>) by your own. This will open an interactive Samba session. In order to browse an dmove files you need to use Samba commands in the interactive session – <a class="reference external" href="https://github.com/noobosaurus-r3x/Cheat-sheets/blob/main/SMBClient%20Cheat%20Sheet.md#3-interactive-commands">see the guide here</a> for the interactive commands.</p>
 </section>
-<section id="onedrive">
-<h2><span class="section-number">7.2. </span>OneDrive<a class="headerlink" href="#onedrive" title="Link to this heading">#</a></h2>
-<p>UCDH generally uses Microsoft web services. Their cloud storage service is OneDrive (comparable to Box, which is used by the Davis campus.) You can get started with OneDrive by going to <a class="reference external" href="https://ucdavis365-my.sharepoint.com">https://ucdavis365-my.sharepoint.com</a>. Strangely, that seems to work with my Davis campus login.</p>
-<p>I have never gotten a definitive answer on whether the cloud storage used by UCDH’s OneDrive instance is owned by UCDH and on their property. As such, I never assume that it is secure enough to hold PHI and PII. Sometimes you will work with a UCDH researcher who is confident they know the answer, but they don’t all agree with each other. So be cautious and don’t be the one who exposes sensitive patient information.</p>
+<section id="one-drive-and-sharepoint">
+<h2>One Drive and Sharepoint<a class="headerlink" href="#one-drive-and-sharepoint" title="Link to this heading">#</a></h2>
+<p>UCDH generally uses Microsoft web services. Their cloud storage service are called One Drive and Sharepoint (both are comparable to Box, which is used by the Davis campus.) There are subtle differences between the two: One Drive files are owned by a user and are stored in that user’s data container on the Microsoft data servers. Sharepoint files are organized into <strong>sites</strong>, each of which is owned by a team. Even when a team has only one person on it, that person doesn’t individually own the files in the site. Administrators of their organization can add people to the team and those new people immediately have access to the data on the site. While I have used the lower-case ‘t’ to refer to a team as a group of people, Sharepoint is integrated with Microsoft Teams the software product (notice the capital ‘T’) so that each team in Teams has a Sharepoint site for collective data storage. You can also create sites that aren’t linked to Teams.</p>
+<p>You can get started with One Drive by going to <a class="reference external" href="https://ucdavis365-my.sharepoint.com">https://ucdavis365-my.sharepoint.com</a>. Strangely, that seems to work with my Davis campus login. The link to view the web interface for Sharepoint is <a class="reference external" href="https://ucdavis365.sharepoint.com/_layouts/15/sharepoint.aspx">https://ucdavis365.sharepoint.com/_layouts/15/sharepoint.aspx</a>.</p>
 </section>
 </section>
 
@@ -448,8 +456,17 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Advanced Compute Environment</p>
+        <p class="prev-next-title">Advanced Compute Environment</p>
       </div>
+    </a>
+    <a class="right-next"
+       href="appendix_order_external_affiliate.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Creating an External Affiliate</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -467,8 +484,8 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-drive">7.1. Network Drive</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onedrive">7.2. OneDrive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#network-drive">Network Drive</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#one-drive-and-sharepoint">One Drive and Sharepoint</a></li>
 </ul>
   </nav></div>
 

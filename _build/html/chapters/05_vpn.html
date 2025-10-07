@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5. VPN Access &#8212; A Datalab Guide to UC Davis Hospital IT</title>
+    <title>VPN Access &#8212; A Datalab Guide to UC Davis Hospital IT</title>
   
   
   
@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'chapters/05_vpn';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="6. Advanced Compute Environment" href="06_ace.html" />
-    <link rel="prev" title="4. Service Now (Getting New Powers)" href="04_service_now.html" />
+    <link rel="next" title="Advanced Compute Environment" href="06_ace.html" />
+    <link rel="prev" title="Service Now (Getting New Powers)" href="04_service_now.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en-us"/>
   </head>
@@ -179,14 +179,20 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_intro.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">2. CITI Training for Handling Protected Information</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">3. Get an Active Directory (AD) Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">4. Service Now (Getting New Powers)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. VPN Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="06_ace.html">6. Advanced Compute Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">7. Data Storage</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_citi_training.html">CITI Training for Handling Protected Information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_active_directory.html">Get an Active Directory (AD) Account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_service_now.html">Service Now (Getting New Powers)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">VPN Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_ace.html">Advanced Compute Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_data_storage.html">Data Storage</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="appendix_order_external_affiliate.html">Creating an External Affiliate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix_phi_pii.html">Protected Health Information and Personally Identifiable Information</a></li>
 </ul>
 
     </div>
@@ -382,9 +388,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-authorization-for-the-vpn">5.1. Getting Authorization for the VPN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-client-software">5.2. Install the Client Software</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">5.3. Connecting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-authorization-for-the-vpn">Getting Authorization for the VPN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-client-software">Install the Client Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">Connecting</a></li>
 </ul>
             </nav>
         </div>
@@ -396,19 +402,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="vpn-access">
-<span id="chapter-vpn"></span><h1><span class="section-number">5. </span>VPN Access<a class="headerlink" href="#vpn-access" title="Link to this heading">#</a></h1>
-<p>In order access services that are hosted on UCDH premises, you must make a secure connection via the UCDH VPN. There is an official <a class="reference external" href="https://health.ucdavis.edu/remote-access/vpn/download-and-install-vpn">UCDH help page for the VPN</a>, which smoe people may prefer. This chapter is meant to be very practical, so it may leave leave “why”-type questions unanswered.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="vpn-access">
+<span id="chapter-vpn"></span><h1>VPN Access<a class="headerlink" href="#vpn-access" title="Link to this heading">#</a></h1>
+<p>In order access services that are hosted on UCDH premises, you must make a secure connection via the UCDH VPN. There is an official <a class="reference external" href="https://health.ucdavis.edu/remote-access/vpn/">UCDH help page for the VPN</a> including download links and a list of frequently asked questions, which some people may prefer. This chapter is meant to be very practical, so it may leave leave “why”-type questions unanswered.</p>
 <section id="getting-authorization-for-the-vpn">
-<h2><span class="section-number">5.1. </span>Getting Authorization for the VPN<a class="headerlink" href="#getting-authorization-for-the-vpn" title="Link to this heading">#</a></h2>
+<h2>Getting Authorization for the VPN<a class="headerlink" href="#getting-authorization-for-the-vpn" title="Link to this heading">#</a></h2>
 <p>Remember that to get new powers on the UCDH IT system, you need to “order” them through the Service Now catalog (see the previous chapter.) This is how to get your account authorized for the VPN. Search the service now catalog for “VPN” and order the item called “Remote Access - VPN - External Employee”.</p>
 </section>
 <section id="install-the-client-software">
-<h2><span class="section-number">5.2. </span>Install the Client Software<a class="headerlink" href="#install-the-client-software" title="Link to this heading">#</a></h2>
+<h2>Install the Client Software<a class="headerlink" href="#install-the-client-software" title="Link to this heading">#</a></h2>
 <p>You need a program on your computer that can create the connection to the UCDH VPN. The officially supported VPN client is Cisco AnyConnect, but you can also use OpenConnect on a computer that uses the Mac or Linux operating systems. I use OpenConnect and find it more reliable than the official Cisco client, but your mileage may vary. Install the AnyConnect client by following the instructions at <a class="reference external" href="https://health.ucdavis.edu/remote-access/vpn/download-and-install-vpn">https://health.ucdavis.edu/remote-access/vpn/download-and-install-vpn</a>. Installing <code class="docutils literal notranslate"><span class="pre">openconnect</span></code> is slightly more advanced because you have to use your computer’s package manager (use <a class="reference external" href="https://brew.sh"><code class="docutils literal notranslate"><span class="pre">brew</span></code></a> or <a class="reference external" href="https://pixi.sh"><code class="docutils literal notranslate"><span class="pre">pixi</span></code></a> on a Mac.)</p>
 </section>
 <section id="connecting">
-<h2><span class="section-number">5.3. </span>Connecting<a class="headerlink" href="#connecting" title="Link to this heading">#</a></h2>
+<h2>Connecting<a class="headerlink" href="#connecting" title="Link to this heading">#</a></h2>
 <p>The address for VPN login is <code class="docutils literal notranslate"><span class="pre">connect.ucdmc.ucdavis.edu</span></code>. Type this into the Cisco AnyConnect client and click <code class="docutils literal notranslate"><span class="pre">Connect</span></code>, or the command for connecting to the VPN via OpenConnect is the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">openconnect</span> <span class="o">--</span><span class="n">protocol</span><span class="o">=</span><span class="n">anyconnect</span> <span class="n">connect</span><span class="o">.</span><span class="n">ucdmc</span><span class="o">.</span><span class="n">ucdavis</span><span class="o">.</span><span class="n">edu</span>
 </pre></div>
@@ -460,7 +466,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">4. </span>Service Now (Getting New Powers)</p>
+        <p class="prev-next-title">Service Now (Getting New Powers)</p>
       </div>
     </a>
     <a class="right-next"
@@ -468,7 +474,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">6. </span>Advanced Compute Environment</p>
+        <p class="prev-next-title">Advanced Compute Environment</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -488,9 +494,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-authorization-for-the-vpn">5.1. Getting Authorization for the VPN</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-client-software">5.2. Install the Client Software</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">5.3. Connecting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-authorization-for-the-vpn">Getting Authorization for the VPN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#install-the-client-software">Install the Client Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting">Connecting</a></li>
 </ul>
   </nav></div>
 

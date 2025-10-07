@@ -1,3 +1,4 @@
+(chapter:ace)=
 # Advanced Compute Environment
 UCDH has set up a powerful on-site compute environment called ACE because researchers often require significant computational resources and medical data generally cannot leave the hospital's servers. ACE is a system that lets researchers request a virtual machine (VM) with the necessary resources for a project. VMs on ACE are provided for a limited duration (up to a year, according to the request form), then returned to the pool of resources. As such, they are useful for computation but should not be used for long-term data storage.
 
@@ -18,7 +19,7 @@ The screenshot shows the first page of the form used to request an ACE VM. The s
 
 **GUI or Command Line** Strangely, the dropdown menu labeled "What software application will be required in the workspace?" is really about deciding whether you want a graphical user interface (GUI) or a command line interface (CLI). For a GUI, select [Anaconda](https://docs.anaconda.com) from the dropdown menu and for a CLI, select [Miniconda](https://docs.anaconda.com/miniconda/) or "None". You can use whatever environment manager software you wish on ACE – [pixi](https://pixi.sh) is Wes and Nick's current favorite.
 
-**Will The VM Be Used For Sensitive Data?** Select "Yes" if you will use the virtual machine or analysis of data that may be protected or personally identifiable. This certainly is the case if patient names, addresses, or birthdates are anywhere in the data, but there are less obvious kinds of personal or protected data. Don't consider this guide to be a reference or what constitutes personally-identifiable inormation or protected health information. Instead, refer to your training on biomediucal research rules and ethics. If you haven't yet had that training, see the chapter on [Personal and Protected Information](chapter:protected-inormation) to learn how to access it.
+**Will The VM Be Used For Sensitive Data?** Select "Yes" if you will use the virtual machine or analysis of data that may be protected or personally identifiable. This certainly is the case if patient names, addresses, or birthdates are anywhere in the data, but there are less obvious kinds of personal or protected data. Don't consider this guide to be a reference or what constitutes personally-identifiable information or protected health information. Instead, refer to your training on biomediucal research rules and ethics. If you haven't yet had that training, see the chapter on {ref}`chapter:citi-training` to learn how to access it.
 
 
 ### Page Two: Options
@@ -53,7 +54,7 @@ Beore you can connect to your new VM, someone in UCDH IT must create it and then
 ### Connect to ACE
 
 :::{note}
-In order to connect to the ACE VM, you must be on the UCDH VPN (see the previous chapter)
+In order to connect to the ACE VM, you must be on the UCDH VPN (see {ref}`chapter:vpn`)
 :::
 
 Now you are ready to connect to your ACE VM. If you requested a Windows VM with a desktop, then you will use Microsoft Remote Desktop to connect. I tend to request a Linux VM with no graphical interface, so I connect via SSH. In either case, the address to connect to is the numerical IP that will have been sent to you by Chris Lambertus in response to your ServiceNow request. He will have also sent a password via an encrypted email (you'll need to follow a link in that email to a web interface where the password can be decrypted.) Once you've logged in, I recommend adding you work computer's SSH public key to the file `~/.ssh/authorized_keys` on the VM. That way you won't have to enter the password each time you want to connect. (See Datalab's workshop [Introduction to Remote Computing](https://ucdavisdatalab.github.io/workshop_intro_to_remote_computing/chapters/01_connecting-to-a-server.html#uploading-ssh-keys))
