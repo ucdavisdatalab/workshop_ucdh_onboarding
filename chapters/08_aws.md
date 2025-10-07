@@ -6,7 +6,7 @@ AWS is an extraordinarily powerful tool built for enterprise-tier data science. 
 The services provided by AWS are quite specialized, so to do a specific task may require knowing the name of a specific service of AWS, and the services tend to have separate and incompatible jargon. The most relevant services are probably data storage with Simple Storage Service (S3) and analysis with SageMaker, Elastic Compute Cloud (EC2), or DataBricks.
 
 ## Get Access
-Before learning to use AWS, you will need to establish an account. Begin by connecting to the UCDH AWS at [ucdh.awsapps.com/start/#](ucdh.awsapps.com/start/#).
+Before learning to use AWS, you will need to establish an account. Begin by connecting to the UCDH AWS at [ucdh.awsapps.com/start/#](https://ucdh.awsapps.com/start/#).
 
 ## Data Storage With S3
 In order to do any data science on AWS, you will need to make sure your data is accessible in your analysis or modeling workflow. S3 is Amazon's service for storing data in AWS. S3 works differently than file systems like you have used on your personal computer. In particular, there is no overall hierarchy to the file system that can be used to locate files. Instead, data is stored in S3 **buckets**, which are kept separate from each other. Within each bucket, the data are stored as **objects** and objects can be organized to simulate a hierarchical file system but that breaks down when working between buckets.
