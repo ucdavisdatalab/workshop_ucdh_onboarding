@@ -1,5 +1,6 @@
 (appendix:order-external-affiliate)=
-## Creating an External Affiliate
+# Creating an External Affiliate
+
 As mentioned in {ref}`chapter:active-directory`, someone else with advanced rights in the UCDH It system must order external affiliate status for you using the Service Now catalog. This section describes how they should do that.
 
 The person requesting your external affiliate status (hereafter called "requestor") does not order "Add an External Affiliate" directly from the Service Now catalog. Instead they will place an order on your behalf for something like access to the UCDH Virtual Private Network (VPN, see {ref}`vpn`), and then at the checkout page they must make sure to order the service for you by clicking "Change This" next to the header that says, "You are ordering items for [yourself]," then "This order is for someone other than me." See screenshots below to recognize the header. 
@@ -18,7 +19,7 @@ Once your requestor enters your identifying information, the NERM system will ge
 
 Following the link in the email will bring you to a form like the following that requests you to enter identifying information and indicate whether you are a UC Davis student or employee. Once you submit your information, your requestor will get an email prompting them to review and approve the information you entered. Once they submit that approval, UCDH IT will proceed with creating your affiliate account.
 
-### Claiming Your Account
+## Claiming Your Account
 Once you are an affiliate and an AD account has been created on your behalf, you must claim it by providing some personal details that match the official UCDH records. [Follow this link to claim your account](https://hsiam.ucdavis.edu/selfservice/claimaccount). The link takes you to an information page with a link to proceed. Click that link and you'll land at the following screen:
 
 ![Screenshot of the form that allows you to claim your Active Directory account](../img/claim-AD-account.png)
