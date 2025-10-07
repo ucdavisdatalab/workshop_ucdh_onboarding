@@ -17,6 +17,11 @@ chapters:
   - file: chapters/06_ace
   - file: chapters/07_data_storage
   
-appendices:
-  - file: chapters/appendix_order_external_affiliate
-  - file: chapters/appendix_phi_pii
+
+- title: Appendices
+  chapters:
+    - file: chapters/appendix_order_external_affiliate
+      not_numbered: true
+    - file: chapters/appendix_phi_pii
+      not_numbered: true
+      
