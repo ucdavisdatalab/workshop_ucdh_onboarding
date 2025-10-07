@@ -6,7 +6,7 @@ There are (at least) two kinds of data that you have to be careful about when wo
 ## CITI Training
 The rules that govern medical research ethics in the United States apply to nearly all researchers and institutions, while compliance relies on individual actions. This puts institutions in an uncomfortable bind because they may be liable for the decisions of individual researchers who have idiosyncratic ideas of ethical research practices. The Collaborative Institutional Training Initiative (CITI) is one way that institutions are attempting to systematize training in medical research ethics.
 
-:::{admonition}
+:::{warning}
 Take your CITI training seriously — it is very easy to expose protected data in ways that are impossible to undo.
 :::
 

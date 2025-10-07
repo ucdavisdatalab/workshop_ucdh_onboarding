@@ -7,6 +7,20 @@ You can't submit a request to become an affiliate — someone else must do it fo
 
 The service requestor must have a certain level of status in the UCDH IT system (NOTE: I am not sure who qualifies, only that I [Wes] do not). Their process to order your account goes through the Service Now catalog (see {ref}`chapter:service-now`), which is the subject of the next chapter. See the appendix {ref}`appendix:order-external-affiliate` for details on what the requestor needs to do on your behalf.
 
+
+## Claiming Your Account
+Once you are an affiliate and an AD account has been created on your behalf, you must claim it by providing some personal details that match the official UCDH records. [Follow this link to claim your account](https://hsiam.ucdavis.edu/selfservice/claimaccount). The link takes you to an information page with a link to proceed. Click that link and you'll land at the following screen:
+
+![Screenshot of the form that allows you to claim your Active Directory account](../img/claim-AD-account.png)
+
+You'll confirm your identity by entering your full name and date of birth, as well as one of the following:
+
+- Last four digits of your social security number
+- Your UCPath ID number
+- Your UC Davis student ID number
+- The combination of an ID and PIN for external affiliates
+
+## Logging In
 Once your AD account is active, you'll be able to log in to UCDH IT services. You can recognize when to use your UCDH AD login because the background image shows the UCDMC campus at night (see screenshot), while the Davis campus login page shows an image of the experimental farm fields. Generally, you must preface your user ID by the three characters `hs\` when logging into UCDH IT services.
 
 ![Screenshot of the UCDH login page with the background image of the UCDMC campus.](../img/ucdh-login.png)
