@@ -9,13 +9,15 @@ options:
 
 # Chapters may be written in either Markdown or as Jupyter Notebooks
 parts:
-  - caption: Chapters
+  - caption: Preliminaries
     chapters:
     - file: chapters/01_intro
     - file: chapters/02_citi_training
     - file: chapters/03_active_directory
     - file: chapters/04_service_now
     - file: chapters/05_vpn
+  - caption: Computing Resources
+    chapters:
     - file: chapters/06_ace
     - file: chapters/07_data_storage
     - file: chapters/08_aws
