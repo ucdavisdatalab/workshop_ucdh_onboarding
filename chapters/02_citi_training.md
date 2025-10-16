@@ -47,6 +47,27 @@ the course. This course is valid for 3 years, after which you'll be prompted to
 complete a refresher course.
 
 
-### Protected Data
+### Working with Protected Data
 
-There are (at least) two kinds of data that you have to be careful about when working with human-subjects data: Personally Identifiable Information (PII) and Protected Health Information (PHI). There is a confusingly large number of protective tiers and policies for this information, which are seemingly independently set by the UC system, UC Davis, and the UC Davis Medical Center. But these policies are all meant to enforce the basic rule that that there be no unauthorized access to these data. The systems and procedures described in this guide exist so that PHI and PII can be hosted securely on servers owned by UCDH and located on UCDH property, while still allowing authorized researchers to do their work even if they're not physically at the hospital. Part of becoming an authorized user is getting your "CITI training" to learn about protected data.
+The University of California, UC Davis, and UCDH all have policies to protect
+sensitive data such as personally identifiable information (PII) and protected
+health information (PHI). Because these policies exist at several different
+levels of the organization, they might seem confusing or intimidating, but
+they're all meant to enforce the basic principle that that must there be no
+unauthorized access to protected data.
+
+The systems and procedures described in this guide exist so that protected data
+can be stored securely on servers owned by UCDH and located on UCDH property,
+while still allowing authorized researchers to do their work even if they're
+not physically at the hospital. Completing CITI training, as explained in the
+preceding section, is a prerequisite to working with protected data.
+
+The University of California classifies data into [4
+categories][uc-protected-data], called **protection levels**, depending on the
+potential impact of disclosure or compromise. Protection level 1 (P1) consists
+of data that would have relatively low impact, such as data already publicly
+available, while protection level 4 (P4) consists of highly sensitive data,
+such as medical records and financial records.
+
+[uc-protected-data]: https://security.ucdavis.edu/data-classification-four-protection-levels
+
