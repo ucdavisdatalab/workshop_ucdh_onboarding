@@ -10,7 +10,7 @@ Requesting an ACE VM is done through Service Now. Search for the "ACE/HC2 Order 
 ### Page One: Basic Setup
 The screenshot shows the first page of the form used to request an ACE VM. The selections are explained below the image.
 
-![Screenshot of the first page of the form for requesting an ACE Virtual Machine. The options are explained in the text below this image.](../img/ACE_request_screenshot.png)
+![Screenshot of the first page of the form for requesting an ACE Virtual Machine. The options are explained in the text below this image.](/images/ACE_request_screenshot.png)
 
 **Size** The small and medium options are well-explained on the request screen. If you select "custom", you'll have to expain what you want in a free-text entry box when you submit your order.
 
@@ -26,7 +26,7 @@ The screenshot shows the first page of the form used to request an ACE VM. The s
 ### Page Two: Options
 After you click "Next" on the Basic Setup page, you'll be prompted to request options for your VM. The screenshot below shows the interface for entering options, assuming you . 
 
-![Screenshot of the second page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image.](../img/ACE-options.png)
+![Screenshot of the second page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image.](/images/ACE-options.png)
 
 The selections are explained below the image.
 
@@ -41,7 +41,7 @@ The selections are explained below the image.
 ### Page Three: Project Details
 The screenshot shows the third page of the form used to request an ACE VM. The selections are explained below the image.
 
-![Screenshot of the third page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image.](../img/ace-form-3.png)
+![Screenshot of the third page of the form for requesting an ACE Virtual Machine. The options will be explained in the text below this image.](/images/ace-form-3.png)
 
 **t**
 

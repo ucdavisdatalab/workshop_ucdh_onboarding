@@ -23,7 +23,9 @@ For example, suppose you're an employee at the Davis campus and want to get VPN
 access. The following screenshot shows a search for "VPN" with the "External
 Employee" option highlighted:
 
-![Screenshot depicts a user searching the UC Davis Hospital Service Now catalog for the term VPN and selecting the option called "Remote Access - VPN - External Employee".](/img/vpn-select-screenshot.png)
+![Screenshot depicts a user searching the UC Davis Hospital Service Now catalog
+for the term VPN and selecting the option called "Remote Access - VPN -
+    External Employee".](/images/vpn-select-screenshot.png)
 
 On the next screen, select the option that says you are a "Contractor", and put
 a note in the "Comments" box that says you are an employee on the Davis campus,

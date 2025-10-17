@@ -32,7 +32,7 @@ following screen:
 
 [claim-ad-account]: https://hsiam.ucdavis.edu/selfservice/claimaccount
 
-![Screenshot of the form that allows you to claim your Active Directory account](../img/claim-AD-account.png)
+![Screenshot of the form that allows you to claim your Active Directory account](/images/claim-AD-account.png)
 
 Confirm your identity by entering your full name and date of birth, as well as
 one of the following:
@@ -61,7 +61,7 @@ UCDH AD login page shows the nighttime photo of UCDMC campus, while the Davis
 campus Kerberos login page shows a daytime photo of the campus' experimental
 farm. For example, here's a screenshot of the UCDH AD login page:
 
-![Screenshot of the UCDH login page with the background image of the UCDMC campus.](../img/ucdh-login.png)
+![Screenshot of the UCDH login page with the background image of the UCDMC campus.](/images/ucdh-login.png)
 :::
 
 If you're a brand new affiliate, you will likely not yet be able to access any
