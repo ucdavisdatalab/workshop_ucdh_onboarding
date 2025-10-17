@@ -24,4 +24,3 @@ parts:
   - caption: Appendices
     chapters:
       - file: chapters/appendix/order_external_affiliate
-      - file: chapters/appendix/protected_data

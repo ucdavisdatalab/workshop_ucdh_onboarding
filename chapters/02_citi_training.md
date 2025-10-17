@@ -47,6 +47,19 @@ the course. This course is valid for 3 years, after which you'll be prompted to
 complete a refresher course.
 
 
+## Standards of Practice for Biomedical Research
+
+For human subjects research, the [Belmont Report][belmont] provides
+peer-reviewed guidelines and ethical principles.
+
+For biomedical research that uses statistical models, including artificial
+intelligence (AI), the [TRIPOD + AI Paper][tripod] provides peer-reviewed
+standards of practice.
+
+[belmont]: https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/
+[tripod]: https://www.tripod-statement.org/
+
+
 ## Working with Protected Data
 
 The University of California, UC Davis, and UCDH all have policies to protect
@@ -70,4 +83,3 @@ available, while protection level 4 (P4) consists of highly sensitive data,
 such as medical records and financial records.
 
 [uc-protected-data]: https://security.ucdavis.edu/data-classification-four-protection-levels
-
