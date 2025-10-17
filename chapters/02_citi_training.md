@@ -47,7 +47,7 @@ the course. This course is valid for 3 years, after which you'll be prompted to
 complete a refresher course.
 
 
-### Working with Protected Data
+## Working with Protected Data
 
 The University of California, UC Davis, and UCDH all have policies to protect
 sensitive data such as personally identifiable information (PII) and protected

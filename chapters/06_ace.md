@@ -1,5 +1,6 @@
 (chapter:ace)=
-# Advanced Compute Environment
+# Advanced Compute Environment (ACE)
+
 UCDH has set up a powerful on-site compute environment called ACE because researchers often require significant computational resources and medical data generally cannot leave the hospital's servers. ACE is a system that lets researchers request a virtual machine (VM) with the necessary resources for a project. VMs on ACE are provided for a limited duration (up to a year, according to the request form), then returned to the pool of resources. As such, they are useful for computation but should not be used for long-term data storage.
 
 

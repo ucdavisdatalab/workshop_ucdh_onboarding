@@ -1,5 +1,5 @@
 (chapter:active-directory)=
-# Active Directory (AD) Accounts
+# Active Directory (AD) Account
 
 Before you can use any of the computing resources at UCDH, you'll need an
 **Active Directory** (AD) account. UCDH uses Microsoft Active Directory as its

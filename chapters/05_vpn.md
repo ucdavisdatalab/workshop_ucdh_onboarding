@@ -1,5 +1,5 @@
 (chapter:vpn)=
-# Virtual Private Network (VPN) Access
+# Virtual Private Network (VPN)
 
 In order to access computing resources at UCDH remotely, you must first connect
 to UCDH's **virtual private network** (VPN). There's an official [help
