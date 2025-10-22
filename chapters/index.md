@@ -13,10 +13,10 @@ identifying information of patients.
 After completing this workshop, learners should be able to:
 
 * Enroll in and complete CITI training
+* Request permissions and services from the UCDH ServiceNow catalog
+* Connect to the UCDH VPN
 * Identify UCDH computing resources compatible with the specific security and
   privacy requirements for their data and research
-* Request new services from the UCDH ServiceNow catalog
-* Connect to the UCDH VPN
-* Request and connect to a virtual machine using ACE
 * Store data in the secure environments provided by UCDH
+* Request and connect to a virtual machine using ACE
 :::
