@@ -22,5 +22,5 @@ parts:
     - file: chapters/09_aws
   - caption: Appendices
     chapters:
-      - file: chapters/appendix_order_external_affiliate
-      - file: chapters/appendix_protected_information
+      - file: chapters/appendix/appendix_order_external_affiliate
+      - file: chapters/appendix/appendix_protected_information
