@@ -1,43 +1,28 @@
 (chapter:vpn)=
 # Virtual Private Network (VPN)
 
-In order to access computing resources at UCDH remotely, you must first connect
-to UCDH's **virtual private network** (VPN). There's an official [help
-page for the VPN][vpn-help] with a list of frequently asked questions and links
-to the necessary software. This chapter provides a high-level summary of the
-steps to access the VPN.
+In order to access computing resources at UCDH remotely, you must first connect to UCDH's **virtual private network** (VPN). There's an official [help page for the VPN][vpn-help] with a list of frequently asked questions and links to the necessary software. This chapter provides a high-level summary of the steps to access the VPN.
 
 [vpn-help]: https://health.ucdavis.edu/remote-access/vpn/
 
 
 ## Get Permission via Service Now
 
-Recall from the {ref}`chapter:service-now` chapter that to get permissions to
-use UCDH computing resources, you must "order" them through the [Service Now
-catalog][service-now]. Search the catalog for "VPN" and order the item called
-"Remote Access - VPN - External Employee".
+Recall from the {ref}`chapter:service-now` chapter that to get permissions to use UCDH computing resources, you must "order" them through the [Service Now catalog][service-now]. Search the catalog for "VPN" and order the item called "Remote Access - VPN - External Employee".
 
 [service-now]: https://ucdh.service-now.com
 
 
 ## Install the Client Software
 
-To connect to the VPN, you'll first need to install VPN client software on your
-computer. For Windows, macOS, and iOS, the officially supported VPN client is
-Cisco AnyConnect. You can install the AnyConnect client by following [these
-instructions][vpn-instructions].
+To connect to the VPN, you'll first need to install VPN client software on your computer. For Windows, macOS, and iOS, the officially supported VPN client is Cisco AnyConnect. You can install the AnyConnect client by following [these instructions][vpn-instructions].
 
 [vpn-instructions]: https://health.ucdavis.edu/remote-access/vpn/download-and-install-vpn
 
 :::{tip}
-There's no officially supported VPN client for other operating systems, but the
-open-source [OpenConnect][] client is able to connect as of writing. You can
-install OpenConnect with your operating system's package manager (on Linux) or
-with a standalone package manager like [Pixi][] (cross-platform) or
-[Homebrew][] (on macOS & Linux).
+There's no officially supported VPN client for other operating systems, but the open-source [OpenConnect][] client is able to connect as of writing. You can install OpenConnect with your operating system's package manager (on Linux) or with a standalone package manager like [Pixi][] (cross-platform) or [Homebrew][] (on macOS & Linux).
 
-In our experience, OpenConnect is more reliable than the official AnyConnect
-client, but your mileage may vary.
+In our experience, OpenConnect is more reliable than the official AnyConnect client, but your mileage may vary.
 
 [OpenConnect]: https://gitlab.com/openconnect/openconnect
 [Pixi]: https://pixi.sh/
