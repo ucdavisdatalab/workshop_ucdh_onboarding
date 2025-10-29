@@ -1,7 +1,8 @@
+(appendix:protected-information)=
 # Protected Information
 UCDH and the people working on its behalf have an ethical and legal responsibility to protect patients and research subjects, including to protect them from exposure of their private information. Protected Health Information (PHI) and Personally Identifiable Information (PII) are the two main categories of information for which protections are enacted in law.
 
-:::`Note`
+:::{note}
 You should always defer to the material in {ref}`chapter:citi-training`. This chapter is a brief summary of the practical implications.
 :::
 
