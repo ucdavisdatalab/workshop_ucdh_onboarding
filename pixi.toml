@@ -1,4 +1,4 @@
-[project]
+[workspace]
 authors = ["Wes B <wbrooks@ucdavis.edu>"]
 channels = ["conda-forge"]
 description = "Add a short description here"
