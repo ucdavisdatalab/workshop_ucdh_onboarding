@@ -58,19 +58,3 @@ standards of practice.
 
 [belmont]: https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/
 [tripod]: https://www.tripod-statement.org/
-
-
-## Working with Protected Data
-
-The University of California, UC Davis, and UCDH all have policies to protect sensitive data such as personally identifiable information (PII) and protected health information (PHI). Because these policies exist at several different levels of the organization, they might seem confusing or intimidating, but they're all meant to enforce the basic principle that that must there be no unauthorized access to protected data.
-
-:::{note}
-For more detail on the protections accorded to PII and PHI, you can see the appendix `appendix:protected-information` or [check out the official UCDH documents](https://health.ucdavis.edu/compliance/privacy/privacy-policies-and-guidelines). The CITI training materials aren't accessible outside of the online course.
-:::
-
-The systems and procedures described in this guide exist so that protected data can be stored securely on servers owned by UCDH and located on UCDH property, while still allowing authorized researchers to do their work even if they're not physically at the hospital. Completing CITI training, as explained in the preceding section, is a prerequisite to working with protected data.
-
-The University of California classifies data into [4
-categories][uc-protected-data], called **protection levels**, depending on the potential impact of disclosure or compromise. Protection level 1 (P1) consists of data that would have relatively low impact, such as data already publicly available, while protection level 4 (P4) consists of highly sensitive data, such as medical records and financial records.
-
-[uc-protected-data]: https://security.ucdavis.edu/data-classification-four-protection-levels
