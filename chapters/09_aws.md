@@ -27,4 +27,4 @@ The problem with EC2 is that the value it provides by efficient use of computati
 ## Databricks
 In order for a typical researcher or small team to make use of EC2, they need a layer that automates EC2 configuration and control in response to demand from the analysis side. That layer is **Databricks**. If you truly need the power of EC2, then Databricks will save you a ton of time learning how to use EC2 and integrate it with your analysis. The user then focuses on writing R or Python code in a notebook to run their analysis.
 
-UCDH 
+

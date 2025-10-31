@@ -20,7 +20,9 @@ parts:
     chapters:
     - file: chapters/06_ace
     - file: chapters/07_data_storage
-    - file: chapters/08_aws
+    - file: chapters/08_code_storage
+    - file: chapters/09_aws
   - caption: Appendices
     chapters:
       - file: chapters/appendix/order_external_affiliate
+      - file: chapters/appendix/working_with_protected_data
